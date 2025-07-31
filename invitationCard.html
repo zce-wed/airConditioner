@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>婚礼请柬 - 诚挚邀请</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+            body {
+                font-family: "Noto Serif SC", serif;
+                background-color: #fdf9f5;
+            }
+
+            h1,
+            h2 {
+                font-family: "Playfair Display", "Noto Serif SC", serif;
+            }
+
+            .invitation-card {
+                background-color: white;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .invitation-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .heart-beat {
+                animation: heartBeat 1.5s infinite;
+            }
+
+            @keyframes heartBeat {
+                0% {
+                    transform: scale(1);
+                }
+                14% {
+                    transform: scale(1.3);
+                }
+                28% {
+                    transform: scale(1);
+                }
+                42% {
+                    transform: scale(1.3);
+                }
+                70% {
+                    transform: scale(1);
+                }
+            }
+
+            .photo-frame {
+                position: relative;
+            }
+
+            .photo-frame::after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                border: 2px solid rgba(255, 255, 255, 0.7);
+                pointer-events: none;
+            }
+
+            .date-location {
+                background-color: #fef3f3;
+                border-radius: 8px;
+            }
+
+            .rsvp-btn {
+                background-color: #e11d48;
+                color: white;
+                transition: all 0.3s ease;
+            }
+
+            .rsvp-btn:hover {
+                background-color: #be123c;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body class="min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="invitation-card max-w-3xl w-full rounded-xl overflow-hidden">
+            <!-- 顶部照片区域 -->
+            <div class="photo-frame relative sm:h-80">
+                <!-- 这里会插入新人照片，实际使用时替换为真实照片 -->
+                <div
+                    class="w-full h-full bg-cover bg-center"
+                    style="
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmNWYzZjMiLz48cmVjdCB4PSI1MCIgeT0iMjAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2UyZThlOSIvPjx0ZXh0IHg9IjUwJSIgeT0iODAlIiBmb250LXNpemU9IjE0IiBmb250LWZhbWlseT0iQXJpYWwiIGZpbGw9IiM4ODgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRoaXMgaXMgYSBwaG90byBmb3JtYXRpb248L3RleHQ+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIiAvPjwvc3ZnPg==');
+                    "
+                >
+                    <img class="w-full" src="./196e292df3b7fafbdd3ecc667fdfd72.jpg" alt="" />
+                </div>
+            </div>
+
+            <!-- 标题区域 -->
+            <div class="text-center pt-8 pb-4 px-6">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">WEDDING INVITATION</h1>
+                <p class="text-xl text-gray-600 italic">婚礼邀请函</p>
+            </div>
+
+            <!-- 邀请内容区域 -->
+            <div class="px-8 py-6">
+                <p class="text-lg text-gray-700 mb-4">To: 曾秋萍</p>
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    "嗨，我们要结婚啦！<br />
+                    很开心能把这个消息告诉你，<br />
+                    欢迎你来参加我们的婚礼！"
+                </p>
+            </div>
+
+            <!-- 日期和地点区域 -->
+            <div class="date-location px-8 py-6 mb-6">
+                <div class="flex items-center mb-4">
+                    <i class="fa fa-calendar text-pink-600 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-gray-800">日期</p>
+                        <p class="text-gray-700">2025年10月19日 农历八月廿八</p>
+                        <p class="text-gray-700">中午11:30</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-map-marker text-pink-600 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-gray-800">地点</p>
+                        <p class="text-gray-700">江西省赣州市瑞金</p>
+                        <p class="text-gray-700">xxx酒店xx厅</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部提示信息 -->
+            <div class="px-8 pb-8 text-center">
+                <p class="text-gray-600 italic">
+                    Tips: 考虑到时间和距离，完全理解你未必能来，别为这个烦恼，<br />
+                    也不用准备线上补礼。祝福，通知到你，我很开心！
+                </p>
+
+                <!-- RSVP按钮 -->
+                <button class="rsvp-btn mt-8 px-8 py-3 rounded-full font-medium flex items-center mx-auto">
+                    <i class="fa fa-heart mr-2 heart-beat"></i>
+                    回复参加
+                </button>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <p class="mt-6 text-gray-500 text-sm">
+            <i class="fa fa-diamond text-pink-400 mr-1"></i>
+            永结同心 <i class="fa fa-heart text-pink-500 mx-1"></i> 百年好合
+        </p>
+
+        <script>
+            // 添加简单的交互效果
+            document.querySelector(".rsvp-btn").addEventListener("click", function () {
+                alert("感谢您的回复！我们已收到您的参加意向。");
+            });
+        </script>
+    </body>
+</html>
